@@ -1,0 +1,1423 @@
+01-Nov-2018 09:45:27.810 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+01-Nov-2018 09:45:27.810 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+01-Nov-2018 09:45:27.814 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@344344fa')
+01-Nov-2018 09:55:59.677 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+01-Nov-2018 09:55:59.677 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+01-Nov-2018 09:56:04.655 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+01-Nov-2018 09:56:04.655 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+01-Nov-2018 09:56:04.663 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@48e64352')
+01-Nov-2018 10:02:32.881 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+01-Nov-2018 10:02:32.882 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+01-Nov-2018 10:02:38.326 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+01-Nov-2018 10:02:38.327 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+01-Nov-2018 10:02:38.330 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@1c25b8a7')
+01-Nov-2018 11:52:07.410 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+01-Nov-2018 11:52:07.411 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+01-Nov-2018 15:12:04.559 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+01-Nov-2018 15:12:04.561 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+01-Nov-2018 15:12:04.563 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@18e8473e')
+01-Nov-2018 15:16:23.975 SEVERE [http-nio-8081-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/LoginWebApp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:473)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:383)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+01-Nov-2018 15:16:39.513 SEVERE [http-nio-8081-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/LoginWebApp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:473)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:383)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+01-Nov-2018 15:16:49.535 SEVERE [http-nio-8081-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/LoginWebApp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:473)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:383)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+01-Nov-2018 15:24:23.664 SEVERE [http-nio-8081-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/LoginWebApp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:473)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:383)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+01-Nov-2018 15:34:07.146 SEVERE [http-nio-8081-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/LoginWebApp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:473)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:383)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+01-Nov-2018 15:34:18.317 SEVERE [http-nio-8081-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/LoginWebApp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:473)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:383)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+01-Nov-2018 15:34:50.906 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+01-Nov-2018 15:34:50.906 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+01-Nov-2018 15:34:57.213 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+01-Nov-2018 15:34:57.213 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+01-Nov-2018 15:34:57.216 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@3044e9c7')
+01-Nov-2018 15:35:10.876 SEVERE [http-nio-8081-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/LoginWebApp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:473)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:383)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+01-Nov-2018 15:35:17.206 SEVERE [http-nio-8081-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/LoginWebApp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:473)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:383)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+01-Nov-2018 15:35:46.796 SEVERE [http-nio-8081-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/LoginWebApp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:473)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:383)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+01-Nov-2018 15:37:47.181 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+01-Nov-2018 15:37:47.181 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+01-Nov-2018 15:37:54.315 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+01-Nov-2018 15:37:54.315 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+01-Nov-2018 15:37:54.329 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@3d7cc3cb')
+01-Nov-2018 15:38:02.207 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+01-Nov-2018 15:38:02.208 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+01-Nov-2018 15:38:08.312 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+01-Nov-2018 15:38:08.312 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+01-Nov-2018 15:38:08.317 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@3d7cc3cb')
+01-Nov-2018 15:38:35.542 SEVERE [http-nio-8081-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/LoginWebApp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:473)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:383)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+01-Nov-2018 15:38:44.028 SEVERE [http-nio-8081-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/LoginWebApp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:473)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:383)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+01-Nov-2018 15:39:04.346 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+01-Nov-2018 15:39:04.346 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+01-Nov-2018 15:39:10.466 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+01-Nov-2018 15:39:10.466 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+01-Nov-2018 15:39:10.469 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@23eee4b8')
+01-Nov-2018 15:39:41.326 SEVERE [http-nio-8081-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/LoginWebApp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:473)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:383)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+01-Nov-2018 15:44:30.828 SEVERE [http-nio-8081-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/LoginWebApp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:473)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:383)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+01-Nov-2018 15:44:41.648 SEVERE [http-nio-8081-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/LoginWebApp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:473)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:383)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+01-Nov-2018 15:44:58.704 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+01-Nov-2018 15:44:58.704 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+01-Nov-2018 15:45:04.381 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+01-Nov-2018 15:45:04.384 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+01-Nov-2018 15:45:04.390 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@3be4f71')
+01-Nov-2018 15:45:07.864 SEVERE [http-nio-8081-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/LoginWebApp] threw exception [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.login_jsp] with root cause
+ java.lang.ClassNotFoundException: org.apache.jsp.login_jsp
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:466)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:128)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:59)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:159)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:186)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:395)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+01-Nov-2018 15:45:07.869 SEVERE [http-nio-8081-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/LoginWebApp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:473)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:383)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+01-Nov-2018 15:45:37.260 SEVERE [http-nio-8081-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/LoginWebApp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+The left-hand side of an assignment must be a variable
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+An error occurred at line: [6] in the jsp file: [/login.jsp]
+Syntax error on token "and", :: expected
+3:     String userName = request.getParameter("uname");    
+4:     String password = request.getParameter("password");
+5:    
+6:     if (userName = "admin" and password = "password") {
+7:     
+8:         response.sendRedirect("success.jsp");
+9:     } else {
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:473)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:383)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+01-Nov-2018 23:14:44.987 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+01-Nov-2018 23:14:44.987 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
